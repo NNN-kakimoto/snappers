@@ -1,5 +1,7 @@
-html{
-	background-color: #000;
-	font-size: 50px;
-	color: #000;
-}
+/*
+	> npm rum gulp 			--でscssコンパイルを監視
+
+	モバイルファーストとする
+		> 携帯画面のCSSを上に
+*/
+@import 'valiables';
