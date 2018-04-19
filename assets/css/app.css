@@ -5,3 +5,93 @@
 	モバイルファーストとする
 		> 携帯画面のCSSを上に
 */
+@font-face {
+  font-family: 'yu';
+  src: url(../fonts/YuGothL.ttc) format("truetype");
+}
+
+@font-face {
+  font-family: 'smart';
+  src: url(../fonts/03スマートフォントUI.otf) format("opentype");
+}
+
+html {
+  font-family: 'yu','smart','sans-serif';
+  margin: 0;
+  padding: 0;
+}
+
+html body {
+  margin: 0;
+  color: #333333;
+  font-size: 15px;
+  line-height: 2;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: #cccccc;
+  }
+  header {
+    width: 960px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  header .global-nav {
+    display: inline-block;
+  }
+  header .global-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  header .global-nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+    height: 35px;
+  }
+  header .global-nav ul li:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 3px;
+  }
+  header .global-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 3px;
+  }
+  header .global-nav ul li a:visited {
+    color: #788d98;
+  }
+  header .global-nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+  }
+  header .logo {
+    display: inline-block;
+    margin-top: 50px;
+    width: calc( 100% - 265px);
+  }
+  #wrap {
+    min-height: calc( 100vh - 100px - 70px);
+  }
+  footer {
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+  }
+  footer small {
+    font-size: 12px;
+  }
+}
