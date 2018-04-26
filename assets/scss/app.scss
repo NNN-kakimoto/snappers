@@ -16,6 +16,10 @@
 	font-family: 'smart';
 	src: url(../fonts/03スマートフォントUI.otf) format("opentype");
 }
+@font-face{
+	font-family: 'arial';
+	src: url(../fonts/ariblk.ttf) format("truetype");
+}
 html{
 	font-family: 'yu','smart','sans-serif'; // フォントデータの指定
 	margin: 0;
@@ -40,6 +44,27 @@ p, h1, h2, h3, h4, h5, h6{
 }
 img{
 	vertical-align: bottom;
+}
+
+
+.btn a{
+	background-color: $btn-color;
+	color: #fff;
+	font-size: 20px;
+	font-family: 'arial','Bitter', serif;
+	width: 185px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	line-height: 50px;
+	margin-top: 20px;
+	border: 3px solid $btn-color;
+	border-radius: 2px;
+
+	&:hover{
+		background-color: #fff;
+		color: $btn-color;
+	}
 }
 
 
@@ -91,17 +116,54 @@ header{
 
 #wrap{
 	min-height: calc( 100vh - 100px - 70px ); // 最低でもフッターが一番下になるように高さを確保
+	.content{
+		width: 960px;
+		margin: 0 auto;
+	}
 }
-
 footer{
 	text-align: center;
 	color: #fff;
 	padding: 20px 0;
+	font-family: 'arial', 'Bitter', sans-serif;
+	a{
+		color: #fff;
+		text-decoration: none;
+	}
 	small{
 		font-size: 12px;
 	}
 }
-}
+#index{ //indexページのみ適応させる
+	background-image: url(../../pages/images/bg-index.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	.content{ 
+		margin-top: 150px;
+		
+		.index_title{
+			font-size: 100px;
+			line-height: 1;
+			color: #fff;
+			font-family: 'arial','Bitter', serif;
+			margin-bottom: 50px;
+		}
+		p{
+			font-size: 16px;
+			color: #fff;
+		}
+	}
+	.index_footer{
+		width: 960px;
+		margin: 0 auto;
+		text-align: left;
+	}
+}	// indexのみ
+
+
+} // デスクトップ用終わり
 
 
 // 携帯画面用
