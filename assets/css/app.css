@@ -98,7 +98,7 @@ img {
     padding-bottom: 3px;
   }
   header .global-nav ul li a:visited {
-    color: #788d98;
+    color: #fff;
   }
   header .global-nav ul li a:hover {
     border-bottom: 2px solid #fff;
@@ -119,6 +119,7 @@ img {
     text-align: center;
     color: #fff;
     padding: 20px 0;
+    background-color: #767671;
     font-family: 'arial', 'Bitter', sans-serif;
   }
   footer a {
@@ -128,30 +129,94 @@ img {
   footer small {
     font-size: 12px;
   }
-  #index {
+  #index, #about {
     background-image: url(../../pages/images/bg-index.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
   }
-  #index .content {
+  #index .content, #about .content {
     margin-top: 150px;
   }
-  #index .content .index_title {
+  #index .content .index_title, #about .content .index_title {
     font-size: 100px;
     line-height: 1;
     color: #fff;
     font-family: 'arial','Bitter', serif;
     margin-bottom: 50px;
   }
-  #index .content p {
+  #index .content p, #about .content p {
     font-size: 16px;
     color: #fff;
   }
-  #index .index_footer {
+  #index .index_footer, #about .index_footer {
     width: 960px;
     margin: 0 auto;
     text-align: left;
+    background-color: transparent;
+  }
+  #about {
+    background-image: url(../../pages/images/bg-about.jpg);
+    background-size: 100% auto;
+    background-position: center top;
+    color: #000;
+  }
+  #about #wrap {
+    background-color: #fff;
+    margin-top: 220px;
+    padding: 35px;
+  }
+  #about #wrap .main-center {
+    width: 940px;
+  }
+  #about #wrap .content {
+    margin-top: 0;
+  }
+  #about #wrap p {
+    color: #000;
+  }
+  #about #wrap h1 {
+    font-family: 'arial','Bitter', serif;
+    font-size: 36px;
+    border-bottom: 1px solid #cccccc;
+  }
+  #about #wrap h2 {
+    font-family: 'arial','Bitter', serif;
+    font-size: 24px;
+  }
+  #about #wrap section {
+    margin-bottom: 35px;
+  }
+  #about #wrap section .icon:before {
+    content: "";
+    padding-right: 10px;
+    border-left: 7px solid #9cb4a4;
+  }
+  #about #wrap .profile {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #about #wrap .profile .profile-image {
+    margin-left: 60px;
+  }
+  #about #wrap .profile .profile-text {
+    width: 540px;
+    display: inline-block;
+  }
+  #about #wrap .career table {
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  #about #wrap .career table th {
+    width: 240px;
+    background-color: #f0f0f0;
+    padding: 12px 0;
+    border: 1px solid #cccccc;
+  }
+  #about #wrap .career table td {
+    width: 660px;
+    padding: 12px 0 12px 40px;
+    border: 1px solid #cccccc;
   }
 }
