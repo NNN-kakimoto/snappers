@@ -135,7 +135,7 @@ footer{
 		font-size: 12px;
 	}
 }
-#index, #about{ //indexページのみ適応させる
+#index, #about, #photograph{ //indexページのみ適応させる
 	background-image: url(../../pages/images/bg-index.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -164,7 +164,7 @@ footer{
 	}
 }	// indexのみ
 
-#about, #portfolio{
+#about, #portfolio, #photograph{
 	background-image: url(../../pages/images/bg-about.jpg);
 	background-size: 100% auto;
 	background-position: center top;
@@ -232,7 +232,7 @@ footer{
 	}
 } // aboutのみ
 
-#portfolio{
+#portfolio, #photograph{
 	background-image: url(../../pages/images/bg-portfolio.jpg);
 	background-attachment: fixed;
 	.content{
@@ -247,31 +247,53 @@ footer{
 			opacity: 0.8;
 		}
 	}
-	.sideber{
-		font-family: 'arial','Bitter', sans-serif;
-		display: inline-block;
-		width: 200px;
-		margin: 0 0 0 30px;
-		h2{
-			margin-bottom: 10px;
-		}
-		ul{
-			font-size: 16px;
-			margin-left: 20px;
-			padding: 0;
-			margin: 0;
-		}
-		a{
-			text-decoration: none;
-			color:$text-color;
-			display: block;
-			&:hover{
-				background-color: $footer-bg-color;
+} //portfolioのみ
+#photograph{
+	background-image: url(../../pages/images/bg-photograph.jpg);
+	.gp{
+		display: flex;
+		flex-wrap: wrap;
+
+		.gi{
+			display: inline-block;
+			margin-bottom: 15px;
+			margin-right: 15px;
+			// margin-right: calc ( ( 700px / 3 ) - 220px );
+			&:nth-child(3n){
+				margin-right: 0;
 			}
 		}
 	}
-} //portfolioのみ
-
+}
+.video{
+	background-image: url(../../pages/images/bg-video.jpg) !important;
+	#movie{
+		
+	}
+}
+.sideber{
+	font-family: 'arial','Bitter', sans-serif;
+	display: inline-block;
+	width: 200px;
+	margin: 0 0 0 30px;
+	h2{
+		margin-bottom: 10px;
+	}
+	ul{
+		font-size: 16px;
+		margin-left: 20px;
+		padding: 0;
+		margin: 0;
+	}
+	a{
+		text-decoration: none;
+		color:$text-color;
+		display: block;
+		&:hover{
+			background-color: $footer-bg-color;
+		}
+	}
+}
 
 } // デスクトップ用終わり
 
