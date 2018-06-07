@@ -135,7 +135,7 @@ footer{
 		font-size: 12px;
 	}
 }
-#index, #about, #photograph{ //indexページのみ適応させる
+#index, #about, #photograph, #contact{ //indexページのみ適応させる
 	background-image: url(../../pages/images/bg-index.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -164,7 +164,7 @@ footer{
 	}
 }	// indexのみ
 
-#about, #portfolio, #photograph{
+#about, #portfolio, #photograph, #contact{
 	background-image: url(../../pages/images/bg-about.jpg);
 	background-size: 100% auto;
 	background-position: center top;
@@ -232,7 +232,7 @@ footer{
 	}
 } // aboutのみ
 
-#portfolio, #photograph{
+#portfolio, #photograph, #contact{
 	background-image: url(../../pages/images/bg-portfolio.jpg);
 	background-attachment: fixed;
 	.content{
@@ -269,6 +269,97 @@ footer{
 	background-image: url(../../pages/images/bg-video.jpg) !important;
 	#movie{
 		
+	}
+}
+#contact{
+
+	.access{
+		display: flex;
+		flex-wrap: wrap;
+		h2{
+			display: block;
+			width: 100%;
+		}
+		.access_textbox, .access_map{
+			display: inline-block;
+		}
+		.access_textbox{
+			width: calc( 100% - 460px );
+			display: flex;
+			flex-wrap: wrap;
+			.access_head{
+				display: inline-block;
+				width: 135px;
+				text-align: center;
+			}
+			.access_content{
+				display: inline-block;
+				width: calc( 100% - 140px );
+			}
+		}
+	}
+	.form{
+		background-color: $form-bg-color;
+		padding: 30px 50px;
+		.required:after, .form_required:after{
+			content:" * ";
+			color: red;
+		}
+		dl{
+			display: flex;
+			flex-wrap: wrap;
+			dt{
+				display: inline-block;
+				width: 165px;
+				padding: 10px 0;
+			}
+			dd{
+				margin-left: 0;
+				display: inline-block;
+				width: calc( 100% - 165px );
+				padding: 10px 0;
+				.name, .email, .tel, .type, .contact{
+					height: 30px;
+				}
+				.name, .tel{
+					width: 240px;
+				}
+				.email{
+					width: 300px;
+				}
+				.contact{
+					width: 180px;
+				}
+				.message{
+					width: 660px;
+					height: 250px;
+				}
+			}
+		}
+		.btn{
+			background-color: $btn-color;
+			color: #fff;
+			font-size: 20px;
+			font-family: 'yu','Bitter', serif;
+			width: 120px;
+			display: block;
+			text-align: center;
+			text-decoration: none;
+			line-height: 50px;
+			margin-top: 20px;
+			margin-left: 165px;
+			border: 2px solid $btn-color;
+			border-radius: 4px;
+		
+			&:hover{
+				background-color: #fff;
+				cursor: pointer;
+				color: $btn-color;
+			}
+		}
+		.attention{
+			margin: 20px 0 0 165px;
+		}
 	}
 }
 .sideber{
