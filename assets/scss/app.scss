@@ -69,7 +69,7 @@ img{
 
 
 // PC表示
-@media screen and ( min-width:1000px ){	
+//@media screen and ( min-width:1000px ){	
 body{
 	background-color: $bg-color;
 }
@@ -386,8 +386,78 @@ footer{
 	}
 }
 
-} // デスクトップ用終わり
+//} // デスクトップ用終わり
 
 
-// 携帯画面用
-// @media screen and ( max-width:1000px ){}
+// タブレット画面用
+//  @media screen and ( max-width:1000px ){
+
+//  }
+@media screen and ( max-width: 600px ){
+body{
+	font-size: 3.5vw;
+}
+h1{
+	font-size: 7.2vw;
+}
+h2{
+	font-size: 6vw;
+}
+header{
+	width: auto;
+	margin: 0 5%;
+	height: auto;
+	.logo{
+		display: block;
+		margin: 0 auto;
+		margin-top: 60px;
+		text-align: center;
+		width: auto;
+	}
+	.global-nav{
+		display: block;
+		margin: 0 auto;
+		margin-top: 40px;
+		text-align: center;
+		li{
+			display: inline-block !important;
+			width: calc( 100% / 3 ) !important;
+			text-align: center;
+			padding: 0 !important;
+			a{
+				display: block;
+				text-align: center;
+			}
+		}
+	}
+}
+#wrap{
+	margin-top: 40px !important	;
+	padding: 35px 0 0 !important;
+	.content{
+		width: 100%;
+
+		h2 img{
+			max-width: 100%;
+		}
+
+		.main{
+			width: auto;
+			margin: 0 5%;
+		}
+		.sideber{
+			margin: 0;
+			width: 100%;
+			padding: 30px 10% 10px;
+			background-color: #f7f6f4;
+		}
+	}
+}
+#portfolio{
+	background-image: url( ../../pages/images/bg-portfolio-sp.jpg) !important;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+} 
+	
+}

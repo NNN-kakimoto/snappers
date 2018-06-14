@@ -67,300 +67,431 @@ img {
   color: #009cd3;
 }
 
-@media screen and (min-width: 1000px) {
+body {
+  background-color: #cccccc;
+}
+
+header {
+  width: 960px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+header .global-nav {
+  display: inline-block;
+}
+
+header .global-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header .global-nav ul li {
+  display: inline-block;
+  padding: 0 20px;
+  height: 35px;
+}
+
+header .global-nav ul li:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+}
+
+header .global-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 3px;
+}
+
+header .global-nav ul li a:visited {
+  color: #fff;
+}
+
+header .global-nav ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+header .logo {
+  display: inline-block;
+  margin-top: 50px;
+  width: calc( 100% - 265px);
+}
+
+#wrap {
+  min-height: calc( 100vh - 100px - 70px);
+}
+
+#wrap .content {
+  width: 960px;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  padding: 20px 0;
+  background-color: #767671;
+  font-family: 'arial', 'Bitter', sans-serif;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer small {
+  font-size: 12px;
+}
+
+#index, #about, #photograph, #contact {
+  background-image: url(../../pages/images/bg-index.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#index .content, #about .content, #photograph .content, #contact .content {
+  margin-top: 150px;
+}
+
+#index .content .index_title, #about .content .index_title, #photograph .content .index_title, #contact .content .index_title {
+  font-size: 100px;
+  line-height: 1;
+  color: #fff;
+  font-family: 'arial','Bitter', serif;
+  margin-bottom: 50px;
+}
+
+#index .content p, #about .content p, #photograph .content p, #contact .content p {
+  font-size: 16px;
+  color: #fff;
+}
+
+#index .index_footer, #about .index_footer, #photograph .index_footer, #contact .index_footer {
+  width: 960px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: transparent;
+}
+
+#about, #portfolio, #photograph, #contact {
+  background-image: url(../../pages/images/bg-about.jpg);
+  background-size: 100% auto;
+  background-position: center top;
+  color: #000;
+}
+
+#about #wrap, #portfolio #wrap, #photograph #wrap, #contact #wrap {
+  background-color: #fff;
+  margin-top: 220px;
+  padding: 35px;
+}
+
+#about #wrap .main-center, #portfolio #wrap .main-center, #photograph #wrap .main-center, #contact #wrap .main-center {
+  width: 940px;
+}
+
+#about #wrap .content, #portfolio #wrap .content, #photograph #wrap .content, #contact #wrap .content {
+  margin-top: 0;
+}
+
+#about #wrap p, #portfolio #wrap p, #photograph #wrap p, #contact #wrap p {
+  color: #000;
+}
+
+#about #wrap h1, #portfolio #wrap h1, #photograph #wrap h1, #contact #wrap h1 {
+  font-family: 'arial','Bitter', serif;
+  font-size: 36px;
+  border-bottom: 1px solid #cccccc;
+}
+
+#about #wrap h2, #portfolio #wrap h2, #photograph #wrap h2, #contact #wrap h2 {
+  font-family: 'arial','Bitter', serif;
+  font-size: 24px;
+}
+
+#about #wrap section, #portfolio #wrap section, #photograph #wrap section, #contact #wrap section {
+  margin-bottom: 35px;
+}
+
+#about #wrap section .icon:before, #portfolio #wrap section .icon:before, #photograph #wrap section .icon:before, #contact #wrap section .icon:before {
+  content: "";
+  padding-right: 10px;
+  border-left: 7px solid #9cb4a4;
+}
+
+#about #wrap .profile, #portfolio #wrap .profile, #photograph #wrap .profile, #contact #wrap .profile {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about #wrap .profile .profile-image, #portfolio #wrap .profile .profile-image, #photograph #wrap .profile .profile-image, #contact #wrap .profile .profile-image {
+  margin-left: 60px;
+}
+
+#about #wrap .profile .profile-text, #portfolio #wrap .profile .profile-text, #photograph #wrap .profile .profile-text, #contact #wrap .profile .profile-text {
+  width: 540px;
+  display: inline-block;
+}
+
+#about #wrap .career table, #portfolio #wrap .career table, #photograph #wrap .career table, #contact #wrap .career table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+#about #wrap .career table th, #portfolio #wrap .career table th, #photograph #wrap .career table th, #contact #wrap .career table th {
+  width: 240px;
+  background-color: #f0f0f0;
+  padding: 12px 0;
+  border: 1px solid #cccccc;
+}
+
+#about #wrap .career table td, #portfolio #wrap .career table td, #photograph #wrap .career table td, #contact #wrap .career table td {
+  width: 660px;
+  padding: 12px 0 12px 40px;
+  border: 1px solid #cccccc;
+}
+
+#portfolio, #photograph, #contact {
+  background-image: url(../../pages/images/bg-portfolio.jpg);
+  background-attachment: fixed;
+}
+
+#portfolio .content, #photograph .content, #contact .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#portfolio .main, #photograph .main, #contact .main {
+  display: inline-block;
+  width: 700px;
+  margin: 0 10px;
+}
+
+#portfolio .main a img:hover, #photograph .main a img:hover, #contact .main a img:hover {
+  opacity: 0.8;
+}
+
+#photograph {
+  background-image: url(../../pages/images/bg-photograph.jpg);
+}
+
+#photograph .gp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#photograph .gp .gi {
+  display: inline-block;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+#photograph .gp .gi:nth-child(3n) {
+  margin-right: 0;
+}
+
+.video {
+  background-image: url(../../pages/images/bg-video.jpg) !important;
+}
+
+#contact .access {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#contact .access h2 {
+  display: block;
+  width: 100%;
+}
+
+#contact .access .access_textbox, #contact .access .access_map {
+  display: inline-block;
+}
+
+#contact .access .access_textbox {
+  width: calc( 100% - 460px);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#contact .access .access_textbox .access_head {
+  display: inline-block;
+  width: 135px;
+  text-align: center;
+}
+
+#contact .access .access_textbox .access_content {
+  display: inline-block;
+  width: calc( 100% - 140px);
+}
+
+#contact .form {
+  background-color: #eaeaea;
+  padding: 30px 50px;
+}
+
+#contact .form .required:after, #contact .form .form_required:after {
+  content: " * ";
+  color: red;
+}
+
+#contact .form dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#contact .form dl dt {
+  display: inline-block;
+  width: 165px;
+  padding: 10px 0;
+}
+
+#contact .form dl dd {
+  margin-left: 0;
+  display: inline-block;
+  width: calc( 100% - 165px);
+  padding: 10px 0;
+}
+
+#contact .form dl dd .name, #contact .form dl dd .email, #contact .form dl dd .tel, #contact .form dl dd .type, #contact .form dl dd .contact {
+  height: 30px;
+}
+
+#contact .form dl dd .name, #contact .form dl dd .tel {
+  width: 240px;
+}
+
+#contact .form dl dd .email {
+  width: 300px;
+}
+
+#contact .form dl dd .contact {
+  width: 180px;
+}
+
+#contact .form dl dd .message {
+  width: 660px;
+  height: 250px;
+}
+
+#contact .form .btn {
+  background-color: #009cd3;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'yu','Bitter', serif;
+  width: 120px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  line-height: 50px;
+  margin-top: 20px;
+  margin-left: 165px;
+  border: 2px solid #009cd3;
+  border-radius: 4px;
+}
+
+#contact .form .btn:hover {
+  background-color: #fff;
+  cursor: pointer;
+  color: #009cd3;
+}
+
+#contact .form .attention {
+  margin: 20px 0 0 165px;
+}
+
+.sideber {
+  font-family: 'arial','Bitter', sans-serif;
+  display: inline-block;
+  width: 200px;
+  margin: 0 0 0 30px;
+}
+
+.sideber h2 {
+  margin-bottom: 10px;
+}
+
+.sideber ul {
+  font-size: 16px;
+  margin-left: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.sideber a {
+  text-decoration: none;
+  color: #333333;
+  display: block;
+}
+
+.sideber a:hover {
+  background-color: #767671;
+}
+
+@media screen and (max-width: 600px) {
   body {
-    background-color: #cccccc;
+    font-size: 3.5vw;
+  }
+  h1 {
+    font-size: 7.2vw;
+  }
+  h2 {
+    font-size: 6vw;
   }
   header {
-    width: 960px;
-    height: 100px;
-    margin: 0 auto;
-  }
-  header .global-nav {
-    display: inline-block;
-  }
-  header .global-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  header .global-nav ul li {
-    display: inline-block;
-    padding: 0 20px;
-    height: 35px;
-  }
-  header .global-nav ul li:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 3px;
-  }
-  header .global-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding-bottom: 3px;
-  }
-  header .global-nav ul li a:visited {
-    color: #fff;
-  }
-  header .global-nav ul li a:hover {
-    border-bottom: 2px solid #fff;
+    width: auto;
+    margin: 0 5%;
+    height: auto;
   }
   header .logo {
-    display: inline-block;
-    margin-top: 50px;
-    width: calc( 100% - 265px);
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: center;
+    width: auto;
+  }
+  header .global-nav {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+  }
+  header .global-nav li {
+    display: inline-block !important;
+    width: calc( 100% / 3) !important;
+    text-align: center;
+    padding: 0 !important;
+  }
+  header .global-nav li a {
+    display: block;
+    text-align: center;
   }
   #wrap {
-    min-height: calc( 100vh - 100px - 70px);
+    margin-top: 40px !important;
+    padding: 35px 0 0 !important;
   }
   #wrap .content {
-    width: 960px;
-    margin: 0 auto;
-  }
-  footer {
-    text-align: center;
-    color: #fff;
-    padding: 20px 0;
-    background-color: #767671;
-    font-family: 'arial', 'Bitter', sans-serif;
-  }
-  footer a {
-    color: #fff;
-    text-decoration: none;
-  }
-  footer small {
-    font-size: 12px;
-  }
-  #index, #about, #photograph, #contact {
-    background-image: url(../../pages/images/bg-index.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-  #index .content, #about .content, #photograph .content, #contact .content {
-    margin-top: 150px;
-  }
-  #index .content .index_title, #about .content .index_title, #photograph .content .index_title, #contact .content .index_title {
-    font-size: 100px;
-    line-height: 1;
-    color: #fff;
-    font-family: 'arial','Bitter', serif;
-    margin-bottom: 50px;
-  }
-  #index .content p, #about .content p, #photograph .content p, #contact .content p {
-    font-size: 16px;
-    color: #fff;
-  }
-  #index .index_footer, #about .index_footer, #photograph .index_footer, #contact .index_footer {
-    width: 960px;
-    margin: 0 auto;
-    text-align: left;
-    background-color: transparent;
-  }
-  #about, #portfolio, #photograph, #contact {
-    background-image: url(../../pages/images/bg-about.jpg);
-    background-size: 100% auto;
-    background-position: center top;
-    color: #000;
-  }
-  #about #wrap, #portfolio #wrap, #photograph #wrap, #contact #wrap {
-    background-color: #fff;
-    margin-top: 220px;
-    padding: 35px;
-  }
-  #about #wrap .main-center, #portfolio #wrap .main-center, #photograph #wrap .main-center, #contact #wrap .main-center {
-    width: 940px;
-  }
-  #about #wrap .content, #portfolio #wrap .content, #photograph #wrap .content, #contact #wrap .content {
-    margin-top: 0;
-  }
-  #about #wrap p, #portfolio #wrap p, #photograph #wrap p, #contact #wrap p {
-    color: #000;
-  }
-  #about #wrap h1, #portfolio #wrap h1, #photograph #wrap h1, #contact #wrap h1 {
-    font-family: 'arial','Bitter', serif;
-    font-size: 36px;
-    border-bottom: 1px solid #cccccc;
-  }
-  #about #wrap h2, #portfolio #wrap h2, #photograph #wrap h2, #contact #wrap h2 {
-    font-family: 'arial','Bitter', serif;
-    font-size: 24px;
-  }
-  #about #wrap section, #portfolio #wrap section, #photograph #wrap section, #contact #wrap section {
-    margin-bottom: 35px;
-  }
-  #about #wrap section .icon:before, #portfolio #wrap section .icon:before, #photograph #wrap section .icon:before, #contact #wrap section .icon:before {
-    content: "";
-    padding-right: 10px;
-    border-left: 7px solid #9cb4a4;
-  }
-  #about #wrap .profile, #portfolio #wrap .profile, #photograph #wrap .profile, #contact #wrap .profile {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #about #wrap .profile .profile-image, #portfolio #wrap .profile .profile-image, #photograph #wrap .profile .profile-image, #contact #wrap .profile .profile-image {
-    margin-left: 60px;
-  }
-  #about #wrap .profile .profile-text, #portfolio #wrap .profile .profile-text, #photograph #wrap .profile .profile-text, #contact #wrap .profile .profile-text {
-    width: 540px;
-    display: inline-block;
-  }
-  #about #wrap .career table, #portfolio #wrap .career table, #photograph #wrap .career table, #contact #wrap .career table {
-    border-spacing: 0;
-    border-collapse: collapse;
-  }
-  #about #wrap .career table th, #portfolio #wrap .career table th, #photograph #wrap .career table th, #contact #wrap .career table th {
-    width: 240px;
-    background-color: #f0f0f0;
-    padding: 12px 0;
-    border: 1px solid #cccccc;
-  }
-  #about #wrap .career table td, #portfolio #wrap .career table td, #photograph #wrap .career table td, #contact #wrap .career table td {
-    width: 660px;
-    padding: 12px 0 12px 40px;
-    border: 1px solid #cccccc;
-  }
-  #portfolio, #photograph, #contact {
-    background-image: url(../../pages/images/bg-portfolio.jpg);
-    background-attachment: fixed;
-  }
-  #portfolio .content, #photograph .content, #contact .content {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #portfolio .main, #photograph .main, #contact .main {
-    display: inline-block;
-    width: 700px;
-    margin: 0 10px;
-  }
-  #portfolio .main a img:hover, #photograph .main a img:hover, #contact .main a img:hover {
-    opacity: 0.8;
-  }
-  #photograph {
-    background-image: url(../../pages/images/bg-photograph.jpg);
-  }
-  #photograph .gp {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #photograph .gp .gi {
-    display: inline-block;
-    margin-bottom: 15px;
-    margin-right: 15px;
-  }
-  #photograph .gp .gi:nth-child(3n) {
-    margin-right: 0;
-  }
-  .video {
-    background-image: url(../../pages/images/bg-video.jpg) !important;
-  }
-  #contact .access {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #contact .access h2 {
-    display: block;
     width: 100%;
   }
-  #contact .access .access_textbox, #contact .access .access_map {
-    display: inline-block;
+  #wrap .content h2 img {
+    max-width: 100%;
   }
-  #contact .access .access_textbox {
-    width: calc( 100% - 460px);
-    display: flex;
-    flex-wrap: wrap;
+  #wrap .content .main {
+    width: auto;
+    margin: 0 5%;
   }
-  #contact .access .access_textbox .access_head {
-    display: inline-block;
-    width: 135px;
-    text-align: center;
-  }
-  #contact .access .access_textbox .access_content {
-    display: inline-block;
-    width: calc( 100% - 140px);
-  }
-  #contact .form {
-    background-color: #eaeaea;
-    padding: 30px 50px;
-  }
-  #contact .form .required:after, #contact .form .form_required:after {
-    content: " * ";
-    color: red;
-  }
-  #contact .form dl {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #contact .form dl dt {
-    display: inline-block;
-    width: 165px;
-    padding: 10px 0;
-  }
-  #contact .form dl dd {
-    margin-left: 0;
-    display: inline-block;
-    width: calc( 100% - 165px);
-    padding: 10px 0;
-  }
-  #contact .form dl dd .name, #contact .form dl dd .email, #contact .form dl dd .tel, #contact .form dl dd .type, #contact .form dl dd .contact {
-    height: 30px;
-  }
-  #contact .form dl dd .name, #contact .form dl dd .tel {
-    width: 240px;
-  }
-  #contact .form dl dd .email {
-    width: 300px;
-  }
-  #contact .form dl dd .contact {
-    width: 180px;
-  }
-  #contact .form dl dd .message {
-    width: 660px;
-    height: 250px;
-  }
-  #contact .form .btn {
-    background-color: #009cd3;
-    color: #fff;
-    font-size: 20px;
-    font-family: 'yu','Bitter', serif;
-    width: 120px;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    line-height: 50px;
-    margin-top: 20px;
-    margin-left: 165px;
-    border: 2px solid #009cd3;
-    border-radius: 4px;
-  }
-  #contact .form .btn:hover {
-    background-color: #fff;
-    cursor: pointer;
-    color: #009cd3;
-  }
-  #contact .form .attention {
-    margin: 20px 0 0 165px;
-  }
-  .sideber {
-    font-family: 'arial','Bitter', sans-serif;
-    display: inline-block;
-    width: 200px;
-    margin: 0 0 0 30px;
-  }
-  .sideber h2 {
-    margin-bottom: 10px;
-  }
-  .sideber ul {
-    font-size: 16px;
-    margin-left: 20px;
-    padding: 0;
+  #wrap .content .sideber {
     margin: 0;
+    width: 100%;
+    padding: 30px 10% 10px;
+    background-color: #f7f6f4;
   }
-  .sideber a {
-    text-decoration: none;
-    color: #333333;
-    display: block;
-  }
-  .sideber a:hover {
-    background-color: #767671;
+  #portfolio {
+    background-image: url(../../pages/images/bg-portfolio-sp.jpg) !important;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
   }
 }
